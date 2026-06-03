@@ -1,0 +1,9 @@
+exp_id,experiment,seed,split_seed,model,optimizer,lr,weight_dacay,momentum,scheduler,T_max,criterion,label_smoothing,batch_size,num_epochs,best_epoch,stopped_epoch,augmentation,best_val_acc,best_val_loss,gap
+V2-001,AdamW + CosineAnnealingLR + RandAugment,42,42,resnet18,AdamW,0.001,0.005,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,27,29,RandomResizedCrop+HorizontalFlip+RandAugment,73.2,1.0124,11.0667
+V2-002,weight_decay = 0.01,42,42,resnet18,AdamW,0.001,0.01,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,23,29,RandomResizedCrop+HorizontalFlip+RandAugment,71.8,1.037,11.6
+V2-003,weight_decay = 0.001,42,42,resnet18,AdamW,0.001,0.001,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,27,30,RandomResizedCrop+HorizontalFlip+RandAugment,72,1.0228,12.4
+V2-004,label_smoothing=0.1,42,42,resnet18,AdamW,0.001,0.005,,CosineAnnealingLR,30,CrossEntropyLoss,0.1,128,30,17,23,RandomResizedCrop+HorizontalFlip+RandAugment,68.4,1.2205,11
+V2-005,dropout=0.3,42,42,resnet18,AdamW,0.001,0.005,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,26,30,RandomResizedCrop+HorizontalFlip+RandAugment,70.8,1.0127,12.7778
+V2-006,RandomErasing,42,42,resnet18,AdamW,0.001,0.005,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,24,30,RandomResizedCrop+HorizontalFlip+RandAugment+RandomErasing,70.2,1.0398,4.6889
+V2-007,RandAugment(magnitude=7),42,42,resnet18,AdamW,0.001,0.005,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,27,30,RandomResizedCrop+HorizontalFlip+RandAugment,71.4000,1.0199,15.3333
+V2-008,RandAugment(num_ops=3),42,42,resnet18,AdamW,0.001,0.005,,CosineAnnealingLR,30,CrossEntropyLoss,0.05,128,30,27,30,RandomResizedCrop+HorizontalFlip+RandAugment,71.2000,1.0181,7.2889

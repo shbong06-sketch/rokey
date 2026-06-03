@@ -1,0 +1,31 @@
+exp_id,experiment,model,optimizer,lr,momentum,scheduler,criterion,label_smoothing,batch_size,num_epochs,best_val_acc,best_val_loss,gap
+Exp001,baseline,resnet18,SGD,0.001,0.9,,CrossEntropyLoss,0.1,128,30,53.4,9.2948,38.1111
+Exp002,dropout(0.5),resnet18,SGD,0.001,0.9,,CrossEntropyLoss,0.1,128,30,54.4,12.4052,16.1556
+Exp003,dropout(0.4),resnet18,SGD,0.001,0.9,,CrossEntropyLoss,0.1,128,30,53,11.7095,22.6889
+Exp004,scheduler(T_max=20),resnet18,SGD,0.001,0.9,CosineAnnealingLR,CrossEntropyLoss,0.1,128,30,46.6,16.3182,-1.0222
+Exp005,scheduler(T_max=30),resnet18,SGD,0.001,0.9,CosineAnnealingLR,CrossEntropyLoss,0.1,128,30,54.2,12.1991,18.0667
+Exp006,AdamW(weight_decay=0.001),resnet18,AdamW,0.001,,,CrossEntropyLoss,0.1,128,30,59.6,1.445,32.4222
+Exp007,scheduler(T_max=30),resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.1,128,30,63.6,1.4351,33.2
+Exp008,labelsmoothing=0.05,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,64.8,1.211,25.5778
+Exp009,labelsmoothing=0.2,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.2,128,30,64.6,1.5582,24.4444
+Exp010,weight_decay=5e-4,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,66.2,1.2808,27.5556
+Exp011,weight_decay=1e-2,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,70.8,1.1507,28.8444
+Exp011,weight_decay=1e-2,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,70.8,1.1507,28.8444
+Exp012,weight_decay=2e-3,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,71.2,1.1741,28.6444
+Exp013,weight_decay=5e-3,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,71.6,1.1552,28.2889
+Exp014,"RandomAugment(num_ops=2, magnitude=9)",resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,96.2,0.4268,-7.5333
+Exp014-a,random seed 변경,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,73.8,0.9908,9.9111
+Exp014-b,random seed 변경,resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,71.2,1.033,11.4667
+Exp014-c,random_split seed 고정(재현성 확인),resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,71.2,1.0236,12.9778
+Exp014-d,random_split seed 고정(재현성 확인),resnet18,AdamW,0.001,,CosineAnnealingLR,CrossEntropyLoss,0.05,128,30,65.6,1.1502,8.0889
+,,,,,,,,,,,,,
+기록,,,,,,,,,,,,,
+"각 실험을 진행할 때, 모델을 새롭게 생성하지 않았다. >> 독립 비교 실험으로 보기 어려움.
+statefull한 객체는 매 실험 시마다 재실행이 필요(그렇지 않으면, epoch를 늘려가며 반복하는 효과가 발생)",,,,,,,,,,,,,
+실험 진행 시 프로토콜,,,,,,,,,,,,,
+1. Seed 고정,,,,,,,,,,,,,
+2. random_split,,,,,,,,,,,,,
+3. 모델 새로 생성,,,,,,,,,,,,,
+4. Optimizer 새로 생성,,,,,,,,,,,,,
+5. Scheduler 새로 생성,,,,,,,,,,,,,
+6. 학습,,,,,,,,,,,,,
