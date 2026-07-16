@@ -1,0 +1,7 @@
+# 1 -> temperature, 2 -> vibration return
+int8 TEMP = 1
+int8 VIBE = 2
+
+int8 semiconductor_data_type
+---
+float32 semiconductor_data_result

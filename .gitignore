@@ -1,5 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+.env
 
-01_setup/*.exe
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Compiled/Binary
+*.o
+*.so
+*.a
 *.exe
 
+# Logs
+*.log
+
+# ROS2 workspace
+04_ros/ros2_ws/build/
+04_ros/ros2_ws/install/
+04_ros/ros2_ws/log/
+
+# Project specific
+01_setup/*.exe
 PROJECT_Data_analyze/my-mercedes-project/data/raw/
