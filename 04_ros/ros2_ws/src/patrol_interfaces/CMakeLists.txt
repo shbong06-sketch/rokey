@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.8)
-project(my_interfaces)
+project(patrol_interfaces)
 
 if(CMAKE_COMPILER_IS_GNUCXX OR CMAKE_CXX_COMPILER_ID MATCHES "Clang")
   add_compile_options(-Wall -Wextra -Wpedantic)
@@ -10,23 +10,12 @@ find_package(ament_cmake REQUIRED)
 
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
- "msg/ArithmeticArgument.msg"
- "msg/SemiConductorSensor.msg"
- "msg/GameState.msg"
- "srv/AddTwoInts.srv"
- "srv/Multiply.srv"
- "srv/ArithmeticOperator.srv"
- "srv/SemiConductorData.srv"
- "srv/Guess.srv"
- "srv/Hint.srv"
- "action/CountUntil.action"
- "action/CountDown.action"
- "action/RecordTrajectory.action"
+"msg/RobotStatus.msg"
+"srv/Command.srv"
+"action/Patrol.action"
 )
 
-# uncomment the following section in order to fill in
-# further dependencies manually.
-# find_package(<dependency> REQUIRED)
+find_package(std_msgs REQUIRED)
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)

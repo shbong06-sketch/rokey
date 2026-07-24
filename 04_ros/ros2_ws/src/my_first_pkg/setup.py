@@ -47,6 +47,13 @@ setup(
             'count_client = my_first_pkg.count_client:main',
             'argument_node = my_first_pkg.argument_node:main',
             'operator_node = my_first_pkg.operator_node:main',
+            'game_server = my_first_pkg.game_server:main',
+            'player = my_first_pkg.player:main',
+            "game_server_improvement = my_first_pkg.game_server_improvement:main",
+            'player_improvement = my_first_pkg.player_improvement:main',
+            'map_publisher = my_first_pkg.map_publisher:main',
+            'map_subscription = my_first_pkg.map_subscription:main',
+            'sensor_publisher = my_first_pkg.sensor_publisher:main',
         ],
     },
 )

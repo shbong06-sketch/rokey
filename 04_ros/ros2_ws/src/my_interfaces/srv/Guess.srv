@@ -1,0 +1,8 @@
+# 요청 : 하나의 알파벳
+# 응답 : 정답 여부 -> bool, 화면표시(ex. "_a__l_" ) -> string, 남은 기회 -> int
+
+string letter
+---
+bool correct
+string display
+int32 lives_left

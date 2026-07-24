@@ -1,0 +1,15 @@
+# 요청
+# - 저장할 시간
+float32 duration
+---
+# 결과
+# - 저장한 메시지 수
+# - 저장된 폴더 경로
+int32 message_count
+string bag_path
+---
+# 피드백
+# - 경과 시간
+# - 남은 시간
+float32 elapsed_time
+float32 remaining_time
