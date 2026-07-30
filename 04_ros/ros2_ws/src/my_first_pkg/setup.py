@@ -54,6 +54,7 @@ setup(
             'map_publisher = my_first_pkg.map_publisher:main',
             'map_subscription = my_first_pkg.map_subscription:main',
             'sensor_publisher = my_first_pkg.sensor_publisher:main',
+            'heavy_pub = my_first_pkg.heavy_pub:main',
         ],
     },
 )

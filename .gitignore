@@ -26,10 +26,19 @@ Thumbs.db
 # Logs
 *.log
 
-# ROS2 workspace
+# ROS2
 04_ros/ros2_ws/build/
 04_ros/ros2_ws/install/
 04_ros/ros2_ws/log/
+04_ros/ros2_ws/.opencode/
+*.mcap
+
+# Archives
+*.zip
+*.mp4
+
+# Jupyter
+.ipynb_checkpoints/
 
 # Project specific
 01_setup/*.exe

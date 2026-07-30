@@ -1,0 +1,664 @@
+<?xml version="1.0"?>
+<sdf version="1.8">
+  <model name="oval_track">
+    <static>true</static>
+    <link name="track_surface">
+      <collision name="straight_bottom_c"><pose>0 -2.0 0.05 0 0 0</pose><geometry><box><size>6.6 1.0 0.1</size></box></geometry></collision>
+      <visual name="straight_bottom_v"><pose>0 -2.0 0.05 0 0 0</pose><geometry><box><size>6.6 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="straight_top_c"><pose>0 2.0 0.05 0 0 0</pose><geometry><box><size>6.6 1.0 0.1</size></box></geometry></collision>
+      <visual name="straight_top_v"><pose>0 2.0 0.05 0 0 0</pose><geometry><box><size>6.6 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r00_c"><pose>3.1308 -1.9957 0.05 0 0 0.0654</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r00_v"><pose>3.1308 -1.9957 0.05 0 0 0.0654</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r01_c"><pose>3.3902 -1.9616 0.05 0 0 0.1963</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r01_v"><pose>3.3902 -1.9616 0.05 0 0 0.1963</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r02_c"><pose>3.6429 -1.8939 0.05 0 0 0.3272</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r02_v"><pose>3.6429 -1.8939 0.05 0 0 0.3272</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r03_c"><pose>3.8846 -1.7937 0.05 0 0 0.4581</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r03_v"><pose>3.8846 -1.7937 0.05 0 0 0.4581</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r04_c"><pose>4.1111 -1.6629 0.05 0 0 0.5890</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r04_v"><pose>4.1111 -1.6629 0.05 0 0 0.5890</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r05_c"><pose>4.3187 -1.5037 0.05 0 0 0.7199</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r05_v"><pose>4.3187 -1.5037 0.05 0 0 0.7199</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r06_c"><pose>4.5037 -1.3187 0.05 0 0 0.8508</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r06_v"><pose>4.5037 -1.3187 0.05 0 0 0.8508</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r07_c"><pose>4.6629 -1.1111 0.05 0 0 0.9817</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r07_v"><pose>4.6629 -1.1111 0.05 0 0 0.9817</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r08_c"><pose>4.7937 -0.8846 0.05 0 0 1.1126</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r08_v"><pose>4.7937 -0.8846 0.05 0 0 1.1126</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r09_c"><pose>4.8939 -0.6429 0.05 0 0 1.2435</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r09_v"><pose>4.8939 -0.6429 0.05 0 0 1.2435</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r10_c"><pose>4.9616 -0.3902 0.05 0 0 1.3744</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r10_v"><pose>4.9616 -0.3902 0.05 0 0 1.3744</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r11_c"><pose>4.9957 -0.1308 0.05 0 0 1.5053</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r11_v"><pose>4.9957 -0.1308 0.05 0 0 1.5053</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r12_c"><pose>4.9957 0.1308 0.05 0 0 1.6362</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r12_v"><pose>4.9957 0.1308 0.05 0 0 1.6362</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r13_c"><pose>4.9616 0.3902 0.05 0 0 1.7671</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r13_v"><pose>4.9616 0.3902 0.05 0 0 1.7671</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r14_c"><pose>4.8939 0.6429 0.05 0 0 1.8980</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r14_v"><pose>4.8939 0.6429 0.05 0 0 1.8980</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r15_c"><pose>4.7937 0.8846 0.05 0 0 2.0289</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r15_v"><pose>4.7937 0.8846 0.05 0 0 2.0289</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r16_c"><pose>4.6629 1.1111 0.05 0 0 2.1598</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r16_v"><pose>4.6629 1.1111 0.05 0 0 2.1598</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r17_c"><pose>4.5037 1.3187 0.05 0 0 2.2907</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r17_v"><pose>4.5037 1.3187 0.05 0 0 2.2907</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r18_c"><pose>4.3187 1.5037 0.05 0 0 2.4216</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r18_v"><pose>4.3187 1.5037 0.05 0 0 2.4216</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r19_c"><pose>4.1111 1.6629 0.05 0 0 2.5525</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r19_v"><pose>4.1111 1.6629 0.05 0 0 2.5525</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r20_c"><pose>3.8846 1.7937 0.05 0 0 2.6834</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r20_v"><pose>3.8846 1.7937 0.05 0 0 2.6834</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r21_c"><pose>3.6429 1.8939 0.05 0 0 2.8143</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r21_v"><pose>3.6429 1.8939 0.05 0 0 2.8143</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r22_c"><pose>3.3902 1.9616 0.05 0 0 2.9452</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r22_v"><pose>3.3902 1.9616 0.05 0 0 2.9452</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_r23_c"><pose>3.1308 1.9957 0.05 0 0 3.0761</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_r23_v"><pose>3.1308 1.9957 0.05 0 0 3.0761</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l00_c"><pose>-3.1308 1.9957 0.05 0 0 3.2070</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l00_v"><pose>-3.1308 1.9957 0.05 0 0 3.2070</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l01_c"><pose>-3.3902 1.9616 0.05 0 0 3.3379</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l01_v"><pose>-3.3902 1.9616 0.05 0 0 3.3379</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l02_c"><pose>-3.6429 1.8939 0.05 0 0 3.4688</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l02_v"><pose>-3.6429 1.8939 0.05 0 0 3.4688</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l03_c"><pose>-3.8846 1.7937 0.05 0 0 3.5997</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l03_v"><pose>-3.8846 1.7937 0.05 0 0 3.5997</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l04_c"><pose>-4.1111 1.6629 0.05 0 0 3.7306</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l04_v"><pose>-4.1111 1.6629 0.05 0 0 3.7306</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l05_c"><pose>-4.3187 1.5037 0.05 0 0 3.8615</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l05_v"><pose>-4.3187 1.5037 0.05 0 0 3.8615</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l06_c"><pose>-4.5037 1.3187 0.05 0 0 3.9924</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l06_v"><pose>-4.5037 1.3187 0.05 0 0 3.9924</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l07_c"><pose>-4.6629 1.1111 0.05 0 0 4.1233</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l07_v"><pose>-4.6629 1.1111 0.05 0 0 4.1233</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l08_c"><pose>-4.7937 0.8846 0.05 0 0 4.2542</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l08_v"><pose>-4.7937 0.8846 0.05 0 0 4.2542</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l09_c"><pose>-4.8939 0.6429 0.05 0 0 4.3851</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l09_v"><pose>-4.8939 0.6429 0.05 0 0 4.3851</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l10_c"><pose>-4.9616 0.3902 0.05 0 0 4.5160</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l10_v"><pose>-4.9616 0.3902 0.05 0 0 4.5160</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l11_c"><pose>-4.9957 0.1308 0.05 0 0 4.6469</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l11_v"><pose>-4.9957 0.1308 0.05 0 0 4.6469</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l12_c"><pose>-4.9957 -0.1308 0.05 0 0 4.7778</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l12_v"><pose>-4.9957 -0.1308 0.05 0 0 4.7778</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l13_c"><pose>-4.9616 -0.3902 0.05 0 0 4.9087</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l13_v"><pose>-4.9616 -0.3902 0.05 0 0 4.9087</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l14_c"><pose>-4.8939 -0.6429 0.05 0 0 5.0396</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l14_v"><pose>-4.8939 -0.6429 0.05 0 0 5.0396</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l15_c"><pose>-4.7937 -0.8846 0.05 0 0 5.1705</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l15_v"><pose>-4.7937 -0.8846 0.05 0 0 5.1705</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l16_c"><pose>-4.6629 -1.1111 0.05 0 0 5.3014</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l16_v"><pose>-4.6629 -1.1111 0.05 0 0 5.3014</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l17_c"><pose>-4.5037 -1.3187 0.05 0 0 5.4323</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l17_v"><pose>-4.5037 -1.3187 0.05 0 0 5.4323</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l18_c"><pose>-4.3187 -1.5037 0.05 0 0 5.5632</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l18_v"><pose>-4.3187 -1.5037 0.05 0 0 5.5632</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l19_c"><pose>-4.1111 -1.6629 0.05 0 0 5.6941</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l19_v"><pose>-4.1111 -1.6629 0.05 0 0 5.6941</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l20_c"><pose>-3.8846 -1.7937 0.05 0 0 5.8250</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l20_v"><pose>-3.8846 -1.7937 0.05 0 0 5.8250</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l21_c"><pose>-3.6429 -1.8939 0.05 0 0 5.9559</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l21_v"><pose>-3.6429 -1.8939 0.05 0 0 5.9559</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l22_c"><pose>-3.3902 -1.9616 0.05 0 0 6.0868</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l22_v"><pose>-3.3902 -1.9616 0.05 0 0 6.0868</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+      <collision name="c_l23_c"><pose>-3.1308 -1.9957 0.05 0 0 6.2177</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry></collision>
+      <visual name="c_l23_v"><pose>-3.1308 -1.9957 0.05 0 0 6.2177</pose><geometry><box><size>0.3416 1.0 0.1</size></box></geometry>
+        <material><ambient>0.5 0.5 0.5 1</ambient><diffuse>0.5 0.5 0.5 1</diffuse></material>
+      </visual>
+    </link>
+    <link name="lane_markings">
+      <visual name="center_bottom"><pose>0 -2.0 0.105 0 0 0</pose><geometry><box><size>6.6 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="center_top"><pose>0 2.0 0.105 0 0 0</pose><geometry><box><size>6.6 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="edge_bl"><pose>0 -2.48 0.105 0 0 0</pose><geometry><box><size>6.6 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="edge_br"><pose>0 -1.52 0.105 0 0 0</pose><geometry><box><size>6.6 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="edge_tl"><pose>0 1.52 0.105 0 0 0</pose><geometry><box><size>6.6 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="edge_tr"><pose>0 2.48 0.105 0 0 0</pose><geometry><box><size>6.6 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <!-- Start line -->
+      <visual name="start_line"><pose>0 -2.0 0.1005 0 0 0</pose><geometry><box><size>0.08 1.0 0.001</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r00"><pose>3.1308 -1.9957 0.105 0 0 0.0654</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r00"><pose>3.0994 -1.5167 0.105 0 0 0.0654</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r00"><pose>3.1622 -2.4747 0.105 0 0 0.0654</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r01"><pose>3.3902 -1.9616 0.105 0 0 0.1963</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r01"><pose>3.2965 -1.4908 0.105 0 0 0.1963</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r01"><pose>3.4838 -2.4323 0.105 0 0 0.1963</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r02"><pose>3.6429 -1.8939 0.105 0 0 0.3272</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r02"><pose>3.4886 -1.4393 0.105 0 0 0.3272</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r02"><pose>3.7972 -2.3484 0.105 0 0 0.3272</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r03"><pose>3.8846 -1.7937 0.105 0 0 0.4581</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r03"><pose>3.6723 -1.3632 0.105 0 0 0.4581</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r03"><pose>4.0969 -2.2242 0.105 0 0 0.4581</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r04"><pose>4.1111 -1.6629 0.105 0 0 0.5890</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r04"><pose>3.8445 -1.2638 0.105 0 0 0.5890</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r04"><pose>4.3778 -2.0620 0.105 0 0 0.5890</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r05"><pose>4.3187 -1.5037 0.105 0 0 0.7199</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r05"><pose>4.0022 -1.1428 0.105 0 0 0.7199</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r05"><pose>4.6352 -1.8646 0.105 0 0 0.7199</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r06"><pose>4.5037 -1.3187 0.105 0 0 0.8508</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r06"><pose>4.1428 -1.0022 0.105 0 0 0.8508</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r06"><pose>4.8646 -1.6352 0.105 0 0 0.8508</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r07"><pose>4.6629 -1.1111 0.105 0 0 0.9817</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r07"><pose>4.2638 -0.8445 0.105 0 0 0.9817</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r07"><pose>5.0620 -1.3778 0.105 0 0 0.9817</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r08"><pose>4.7937 -0.8846 0.105 0 0 1.1126</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r08"><pose>4.3632 -0.6723 0.105 0 0 1.1126</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r08"><pose>5.2242 -1.0969 0.105 0 0 1.1126</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r09"><pose>4.8939 -0.6429 0.105 0 0 1.2435</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r09"><pose>4.4393 -0.4886 0.105 0 0 1.2435</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r09"><pose>5.3484 -0.7972 0.105 0 0 1.2435</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r10"><pose>4.9616 -0.3902 0.105 0 0 1.3744</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r10"><pose>4.4908 -0.2965 0.105 0 0 1.3744</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r10"><pose>5.4323 -0.4838 0.105 0 0 1.3744</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r11"><pose>4.9957 -0.1308 0.105 0 0 1.5053</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r11"><pose>4.5167 -0.0994 0.105 0 0 1.5053</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r11"><pose>5.4747 -0.1622 0.105 0 0 1.5053</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r12"><pose>4.9957 0.1308 0.105 0 0 1.6362</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r12"><pose>4.5167 0.0994 0.105 0 0 1.6362</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r12"><pose>5.4747 0.1622 0.105 0 0 1.6362</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r13"><pose>4.9616 0.3902 0.105 0 0 1.7671</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r13"><pose>4.4908 0.2965 0.105 0 0 1.7671</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r13"><pose>5.4323 0.4838 0.105 0 0 1.7671</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r14"><pose>4.8939 0.6429 0.105 0 0 1.8980</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r14"><pose>4.4393 0.4886 0.105 0 0 1.8980</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r14"><pose>5.3484 0.7972 0.105 0 0 1.8980</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r15"><pose>4.7937 0.8846 0.105 0 0 2.0289</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r15"><pose>4.3632 0.6723 0.105 0 0 2.0289</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r15"><pose>5.2242 1.0969 0.105 0 0 2.0289</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r16"><pose>4.6629 1.1111 0.105 0 0 2.1598</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r16"><pose>4.2638 0.8445 0.105 0 0 2.1598</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r16"><pose>5.0620 1.3778 0.105 0 0 2.1598</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r17"><pose>4.5037 1.3187 0.105 0 0 2.2907</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r17"><pose>4.1428 1.0022 0.105 0 0 2.2907</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r17"><pose>4.8646 1.6352 0.105 0 0 2.2907</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r18"><pose>4.3187 1.5037 0.105 0 0 2.4216</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r18"><pose>4.0022 1.1428 0.105 0 0 2.4216</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r18"><pose>4.6352 1.8646 0.105 0 0 2.4216</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r19"><pose>4.1111 1.6629 0.105 0 0 2.5525</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r19"><pose>3.8445 1.2638 0.105 0 0 2.5525</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r19"><pose>4.3778 2.0620 0.105 0 0 2.5525</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r20"><pose>3.8846 1.7937 0.105 0 0 2.6834</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r20"><pose>3.6723 1.3632 0.105 0 0 2.6834</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r20"><pose>4.0969 2.2242 0.105 0 0 2.6834</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r21"><pose>3.6429 1.8939 0.105 0 0 2.8143</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r21"><pose>3.4886 1.4393 0.105 0 0 2.8143</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r21"><pose>3.7972 2.3484 0.105 0 0 2.8143</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r22"><pose>3.3902 1.9616 0.105 0 0 2.9452</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r22"><pose>3.2965 1.4908 0.105 0 0 2.9452</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r22"><pose>3.4838 2.4323 0.105 0 0 2.9452</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_r23"><pose>3.1308 1.9957 0.105 0 0 3.0761</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_r23"><pose>3.0994 1.5167 0.105 0 0 3.0761</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_r23"><pose>3.1622 2.4747 0.105 0 0 3.0761</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l00"><pose>-3.1308 1.9957 0.105 0 0 3.2070</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l00"><pose>-3.0994 1.5167 0.105 0 0 3.2070</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l00"><pose>-3.1622 2.4747 0.105 0 0 3.2070</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l01"><pose>-3.3902 1.9616 0.105 0 0 3.3379</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l01"><pose>-3.2965 1.4908 0.105 0 0 3.3379</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l01"><pose>-3.4838 2.4323 0.105 0 0 3.3379</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l02"><pose>-3.6429 1.8939 0.105 0 0 3.4688</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l02"><pose>-3.4886 1.4393 0.105 0 0 3.4688</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l02"><pose>-3.7972 2.3484 0.105 0 0 3.4688</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l03"><pose>-3.8846 1.7937 0.105 0 0 3.5997</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l03"><pose>-3.6723 1.3632 0.105 0 0 3.5997</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l03"><pose>-4.0969 2.2242 0.105 0 0 3.5997</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l04"><pose>-4.1111 1.6629 0.105 0 0 3.7306</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l04"><pose>-3.8445 1.2638 0.105 0 0 3.7306</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l04"><pose>-4.3778 2.0620 0.105 0 0 3.7306</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l05"><pose>-4.3187 1.5037 0.105 0 0 3.8615</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l05"><pose>-4.0022 1.1428 0.105 0 0 3.8615</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l05"><pose>-4.6352 1.8646 0.105 0 0 3.8615</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l06"><pose>-4.5037 1.3187 0.105 0 0 3.9924</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l06"><pose>-4.1428 1.0022 0.105 0 0 3.9924</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l06"><pose>-4.8646 1.6352 0.105 0 0 3.9924</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l07"><pose>-4.6629 1.1111 0.105 0 0 4.1233</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l07"><pose>-4.2638 0.8445 0.105 0 0 4.1233</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l07"><pose>-5.0620 1.3778 0.105 0 0 4.1233</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l08"><pose>-4.7937 0.8846 0.105 0 0 4.2542</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l08"><pose>-4.3632 0.6723 0.105 0 0 4.2542</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l08"><pose>-5.2242 1.0969 0.105 0 0 4.2542</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l09"><pose>-4.8939 0.6429 0.105 0 0 4.3851</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l09"><pose>-4.4393 0.4886 0.105 0 0 4.3851</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l09"><pose>-5.3484 0.7972 0.105 0 0 4.3851</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l10"><pose>-4.9616 0.3902 0.105 0 0 4.5160</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l10"><pose>-4.4908 0.2965 0.105 0 0 4.5160</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l10"><pose>-5.4323 0.4838 0.105 0 0 4.5160</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l11"><pose>-4.9957 0.1308 0.105 0 0 4.6469</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l11"><pose>-4.5167 0.0994 0.105 0 0 4.6469</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l11"><pose>-5.4747 0.1622 0.105 0 0 4.6469</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l12"><pose>-4.9957 -0.1308 0.105 0 0 4.7778</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l12"><pose>-4.5167 -0.0994 0.105 0 0 4.7778</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l12"><pose>-5.4747 -0.1622 0.105 0 0 4.7778</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l13"><pose>-4.9616 -0.3902 0.105 0 0 4.9087</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l13"><pose>-4.4908 -0.2965 0.105 0 0 4.9087</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l13"><pose>-5.4323 -0.4838 0.105 0 0 4.9087</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l14"><pose>-4.8939 -0.6429 0.105 0 0 5.0396</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l14"><pose>-4.4393 -0.4886 0.105 0 0 5.0396</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l14"><pose>-5.3484 -0.7972 0.105 0 0 5.0396</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l15"><pose>-4.7937 -0.8846 0.105 0 0 5.1705</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l15"><pose>-4.3632 -0.6723 0.105 0 0 5.1705</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l15"><pose>-5.2242 -1.0969 0.105 0 0 5.1705</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l16"><pose>-4.6629 -1.1111 0.105 0 0 5.3014</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l16"><pose>-4.2638 -0.8445 0.105 0 0 5.3014</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l16"><pose>-5.0620 -1.3778 0.105 0 0 5.3014</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l17"><pose>-4.5037 -1.3187 0.105 0 0 5.4323</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l17"><pose>-4.1428 -1.0022 0.105 0 0 5.4323</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l17"><pose>-4.8646 -1.6352 0.105 0 0 5.4323</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l18"><pose>-4.3187 -1.5037 0.105 0 0 5.5632</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l18"><pose>-4.0022 -1.1428 0.105 0 0 5.5632</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l18"><pose>-4.6352 -1.8646 0.105 0 0 5.5632</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l19"><pose>-4.1111 -1.6629 0.105 0 0 5.6941</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l19"><pose>-3.8445 -1.2638 0.105 0 0 5.6941</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l19"><pose>-4.3778 -2.0620 0.105 0 0 5.6941</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l20"><pose>-3.8846 -1.7937 0.105 0 0 5.8250</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l20"><pose>-3.6723 -1.3632 0.105 0 0 5.8250</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l20"><pose>-4.0969 -2.2242 0.105 0 0 5.8250</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l21"><pose>-3.6429 -1.8939 0.105 0 0 5.9559</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l21"><pose>-3.4886 -1.4393 0.105 0 0 5.9559</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l21"><pose>-3.7972 -2.3484 0.105 0 0 5.9559</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l22"><pose>-3.3902 -1.9616 0.105 0 0 6.0868</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l22"><pose>-3.2965 -1.4908 0.105 0 0 6.0868</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l22"><pose>-3.4838 -2.4323 0.105 0 0 6.0868</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="ctr_l23"><pose>-3.1308 -1.9957 0.105 0 0 6.2177</pose><geometry><box><size>0.3416 0.04 0.01</size></box></geometry>
+        <material><ambient>1 1 0 1</ambient><diffuse>1 1 0 1</diffuse></material>
+      </visual>
+      <visual name="ei_l23"><pose>-3.0994 -1.5167 0.105 0 0 6.2177</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+      <visual name="eo_l23"><pose>-3.1622 -2.4747 0.105 0 0 6.2177</pose><geometry><box><size>0.3416 0.03 0.01</size></box></geometry>
+        <material><ambient>1 1 1 1</ambient><diffuse>1 1 1 1</diffuse></material>
+      </visual>
+    </link>
+  </model>
+</sdf>
