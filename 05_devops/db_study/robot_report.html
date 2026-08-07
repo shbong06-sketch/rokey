@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>로봇 사용 현황 레포트</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: "Pretendard", "Noto Sans KR", -apple-system, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+    line-height: 1.6;
+    padding: 32px 16px;
+  }
+  .container { max-width: 1080px; margin: 0 auto; }
+  .header {
+    background: linear-gradient(135deg, #0f172a, #334155);
+    color: #fff;
+    border-radius: 16px;
+    padding: 32px;
+    margin-bottom: 24px;
+  }
+  .header h1 { font-size: 28px; font-weight: 700; }
+  .header .sub { color: #cbd5e1; margin-top: 6px; font-size: 14px; }
+  .header .badge { margin-top: 14px; display: inline-block; background: rgba(255,255,255,.15); padding: 4px 12px; border-radius: 999px; font-size: 13px; }
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 16px; margin-bottom: 24px; }
+  .card { background: #fff; border-radius: 12px; padding: 20px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .card .num { font-size: 30px; font-weight: 800; }
+  .card .lbl { font-size: 13px; color: #64748b; margin-top: 4px; }
+  .card.accent { border-top: 4px solid #3b82f6; }
+  .card.green { border-top: 4px solid #22c55e; }
+  .card.orange { border-top: 4px solid #f59e0b; }
+  .card.red { border-top: 4px solid #ef4444; }
+  .section { background: #fff; border-radius: 12px; padding: 24px; margin-bottom: 24px; box-shadow: 0 1px 3px rgba(0,0,0,.06); }
+  .section h2 { font-size: 18px; font-weight: 700; margin-bottom: 16px; padding-bottom: 10px; border-bottom: 2px solid #e2e8f0; }
+  table { width: 100%; border-collapse: collapse; font-size: 14px; }
+  th { text-align: left; color: #64748b; font-weight: 600; font-size: 12px; text-transform: uppercase; letter-spacing: .04em; padding: 10px 12px; border-bottom: 1px solid #e2e8f0; background: #f8fafc; }
+  td { padding: 10px 12px; border-bottom: 1px solid #f1f5f9; }
+  tr:last-child td { border-bottom: none; }
+  .status { display: inline-block; padding: 3px 10px; border-radius: 999px; font-size: 12px; font-weight: 600; }
+  .st-work { background: #dbeafe; color: #1d4ed8; }
+  .st-move { background: #e0e7ff; color: #4338ca; }
+  .st-charge { background: #fef3c7; color: #b45309; }
+  .st-idle { background: #e2e8f0; color: #475569; }
+  .st-error { background: #fee2e2; color: #b91c1c; }
+  .st-done { background: #dcfce7; color: #15803d; }
+  .st-ongoing { background: #dbeafe; color: #1d4ed8; }
+  .st-wait { background: #f1f5f9; color: #64748b; }
+  .bar { background: #e2e8f0; border-radius: 6px; height: 12px; overflow: hidden; min-width: 120px; }
+  .bar > div { height: 100%; border-radius: 6px; }
+  .mini-chart { display: flex; align-items: center; gap: 10px; }
+  .num-cell { font-weight: 700; }
+  .grid2 { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+  @media (max-width: 720px) { .grid2 { grid-template-columns: 1fr; } }
+  .foot { text-align: center; color: #94a3b8; font-size: 12px; margin-top: 16px; }
+  .warn { background: #fef3c7; border-left: 4px solid #f59e0b; padding: 12px 16px; border-radius: 8px; font-size: 13px; margin-top: 16px; }
+  .info { background: #eff6ff; border-left: 4px solid #3b82f6; padding: 12px 16px; border-radius: 8px; font-size: 13px; margin-top: 16px; }
+</style>
+</head>
+<body>
+<div class="container">
+
+  <div class="header">
+    <h1>로봇 사용 현황 레포트</h1>
+    <div class="sub">DB 기반 운영 현황 요약 리포트 · 데이터 기준: 2026-08-03 20:34</div>
+    <div class="badge">PostgreSQL · db_study · 8대 로봇</div>
+  </div>
+
+  <div class="cards">
+    <div class="card accent"><div class="num">8</div><div class="lbl">전체 로봇</div></div>
+    <div class="card green"><div class="num">5</div><div class="lbl">가동 중 (작업중 3 · 이동중 1 · 충전중 1)</div></div>
+    <div class="card"><div class="num">2</div><div class="lbl">대기 중</div></div>
+    <div class="card red"><div class="num">1</div><div class="lbl">오류 상태</div></div>
+    <div class="card"><div class="num">10</div><div class="lbl">미션 (완료 3 · 진행 3 · 대기 4)</div></div>
+    <div class="card orange"><div class="num">₩1,105,000</div><div class="lbl">누적 유지보수 비용</div></div>
+  </div>
+
+  <div class="section">
+    <h2>1. 로봇별 현재 상태</h2>
+    <table>
+      <thead>
+        <tr><th>로봇</th><th>모델</th><th>도입일</th><th>상태</th><th>배터리</th><th>배터리 전압 (V)</th><th>온도 (°C)</th></tr>
+      </thead>
+      <tbody>
+        <tr><td><b>R-01</b></td><td>서빙 S1</td><td>2024-05-11</td><td><span class="status st-work">작업중</span></td><td>54%</td><td>23.00</td><td>46.15</td></tr>
+        <tr><td><b>R-02</b></td><td>서빙 S1</td><td>2024-06-20</td><td><span class="status st-work">작업중</span></td><td>67%</td><td>23.60</td><td>44.52</td></tr>
+        <tr><td><b>R-03</b></td><td>서빙 S1</td><td>2024-07-02</td><td><span class="status st-work">작업중</span></td><td>69%</td><td>24.20</td><td>45.65</td></tr>
+        <tr><td><b>R-04</b></td><td>물류 L1</td><td>2024-09-15</td><td><span class="status st-idle">대기</span></td><td>80%</td><td>24.80</td><td>46.15</td></tr>
+        <tr><td><b>R-05</b></td><td>물류 L1</td><td>2024-11-03</td><td><span class="status st-error">오류</span></td><td>91%</td><td>23.36</td><td>45.79</td></tr>
+        <tr><td><b>R-06</b></td><td>물류 L1</td><td>2025-01-08</td><td><span class="status st-charge">충전중</span></td><td>36%</td><td>23.96</td><td>46.92</td></tr>
+        <tr><td><b>R-07</b></td><td>청소 C1</td><td>2025-02-14</td><td><span class="status st-move">이동중</span></td><td>47%</td><td>24.56</td><td>46.15</td></tr>
+        <tr><td><b>R-08</b></td><td>청소 C1</td><td>2025-02-28</td><td><span class="status st-idle">대기</span></td><td>58%</td><td>23.12</td><td>47.07</td></tr>
+      </tbody>
+    </table>
+    <div class="warn"><b>알림:</b> R-05가 오류 상태로 보고됨 (배터리 91%로 충분하나 온도 45.8°C — 점검 필요). R-06은 배터리 36%로 충전 중.</div>
+  </div>
+
+  <div class="section">
+    <h2>2. 미션 수행 현황</h2>
+    <div class="grid2">
+      <div>
+        <h2 style="font-size:14px;border:none;padding:0;margin-bottom:8px;">유형별 미션</h2>
+        <table>
+          <thead><tr><th>유형</th><th>완료</th><th>진행</th><th>대기</th><th>합계</th></tr></thead>
+          <tbody>
+            <tr><td>서빙</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+            <tr><td>보충</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+            <tr><td>청소</td><td>1</td><td>1</td><td>1</td><td>3</td></tr>
+            <tr><td>회수</td><td>0</td><td>0</td><td>1</td><td>1</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div>
+        <h2 style="font-size:14px;border:none;padding:0;margin-bottom:8px;">상태별 미션</h2>
+        <table>
+          <thead><tr><th>상태</th><th>건수</th></tr></thead>
+          <tbody>
+            <tr><td><span class="status st-done">완료</span></td><td>3</td></tr>
+            <tr><td><span class="status st-ongoing">진행</span></td><td>3</td></tr>
+            <tr><td><span class="status st-wait">대기</span></td><td>4</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <h2 style="font-size:14px;margin-top:24px;">미션 상세</h2>
+    <table>
+      <thead><tr><th>ID</th><th>유형</th><th>우선순위</th><th>상태</th><th>담당 로봇</th><th>시작</th><th>종료</th><th>소요시간</th></tr></thead>
+      <tbody>
+        <tr><td>8</td><td>서빙</td><td>1</td><td><span class="status st-done">완료</span></td><td>R-02</td><td>14:06</td><td>14:26</td><td>20분</td></tr>
+        <tr><td>9</td><td>보충</td><td>2</td><td><span class="status st-done">완료</span></td><td>R-05</td><td>10:26</td><td>10:56</td><td>30분</td></tr>
+        <tr><td>10</td><td>청소</td><td>3</td><td><span class="status st-done">완료</span></td><td>R-08</td><td>05:46</td><td>06:26</td><td>40분</td></tr>
+        <tr><td>1</td><td>서빙</td><td>1</td><td><span class="status st-ongoing">진행</span></td><td>R-01</td><td>20:06</td><td>–</td><td>–</td></tr>
+        <tr><td>2</td><td>보충</td><td>2</td><td><span class="status st-ongoing">진행</span></td><td>R-04</td><td>19:11</td><td>–</td><td>–</td></tr>
+        <tr><td>3</td><td>청소</td><td>3</td><td><span class="status st-ongoing">진행</span></td><td>R-07</td><td>18:16</td><td>–</td><td>–</td></tr>
+        <tr><td>4</td><td>서빙</td><td>1</td><td><span class="status st-wait">대기</span></td><td>–</td><td>20:21</td><td>–</td><td>–</td></tr>
+        <tr><td>5</td><td>보충</td><td>2</td><td><span class="status st-wait">대기</span></td><td>–</td><td>19:26</td><td>–</td><td>–</td></tr>
+        <tr><td>7</td><td>청소</td><td>4</td><td><span class="status st-wait">대기</span></td><td>–</td><td>17:26</td><td>–</td><td>–</td></tr>
+        <tr><td>6</td><td>회수</td><td>3</td><td><span class="status st-wait">대기</span></td><td>–</td><td>20:34</td><td>–</td><td>–</td></tr>
+      </tbody>
+    </table>
+    <div class="info">평균 미션 소요: 서빙 20분 · 보충 30분 · 청소 40분. 우선순위 1(서빙) 미션이 1건 대기 중이며 진행 중인 서빙(R-01) 완료 후 즉시 배정 필요.</div>
+  </div>
+
+  <div class="section">
+    <h2>3. 유지보수 이력</h2>
+    <table>
+      <thead><tr><th>로봇</th><th>유형</th><th>비용</th><th>일자</th></tr></thead>
+      <tbody>
+        <tr><td>R-06</td><td>충돌 외판 교체</td><td>–</td><td>2026-07-31</td></tr>
+        <tr><td>R-04</td><td>센서 캘리브레이션</td><td>₩100,000</td><td>2026-07-29</td></tr>
+        <tr><td>R-02</td><td>펌웨어 점검</td><td>₩60,000</td><td>2026-07-25</td></tr>
+        <tr><td>R-05</td><td>구동 모터 교체</td><td>₩420,000</td><td>2026-07-22</td></tr>
+        <tr><td>R-07</td><td>브러시 교체</td><td>₩95,000</td><td>2026-07-16</td></tr>
+        <tr><td>R-04</td><td>리프트 벨트 교체</td><td>₩160,000</td><td>2026-07-09</td></tr>
+        <tr><td>R-01</td><td>배터리 팩 교체</td><td>₩180,000</td><td>2026-07-01</td></tr>
+        <tr><td>R-02</td><td>휠 교체</td><td>₩90,000</td><td>2026-06-23</td></tr>
+      </tbody>
+    </table>
+    <div class="warn">R-05는 7/22 구동 모터 교체 후 현재 오류 상태 — 재점검 필요. R-01은 7/1 배터리 팩 교체 후 배터리 54%로 정상 수준.</div>
+  </div>
+
+  <div class="section">
+    <h2>4. 요약 및 권고사항</h2>
+    <ul style="font-size:14px;padding-left:20px;display:grid;gap:8px;">
+      <li>서빙(3대) 로봇이 모두 가동 중이며 서빙 미션이 추가 대기 — 작업 효율 유지.</li>
+      <li>R-05 오류 상태: 7월 구동 모터 교체 이력과 연관 가능성, 원격 점검 후 투입 필요.</li>
+      <li>R-06 배터리 36%로 충전 중 — 배터리 팩 노후(2025-01 도입) 확인 권장.</li>
+      <li>대기 미션 4건 중 우선순위 1(서빙)을 최우선 배정.</li>
+      <li>누적 유지보수 비용 약 ₩1,105,000 — 모터/배터리 등 부품 교체 비중 높음.</li>
+    </ul>
+  </div>
+
+  <div class="foot">생성: 2026-08-05 · 출처: db_study (PostgreSQL) · robot_report.html</div>
+</div>
+</body>
+</html>
