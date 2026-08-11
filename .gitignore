@@ -31,6 +31,10 @@ Thumbs.db
 04_ros/ros2_ws/install/
 04_ros/ros2_ws/log/
 04_ros/ros2_ws/.opencode/
+04_ros/demo_ros_prj/build/
+04_ros/demo_ros_prj/install/
+04_ros/demo_ros_prj/log/
+
 *.mcap
 
 # Archives
