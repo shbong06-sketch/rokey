@@ -1,0 +1,36 @@
+services:
+  web:
+    image: nginx
+    ports:
+      - "8080:80"
+
+  db:
+    image: postgres:16
+    environment:
+      POSTGRES_PASSWORD: "${DB_PASSWORD}"
+      POSTGRES_DB: robotdb
+    ports:
+      - "5432:5432"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U postgres -d robotdb"]
+      interval: 5s
+      retries: 10 
+    volumes:
+      - dbdata:/var/lib/postgresql/data
+
+  worker:
+    build: ./worker
+    environment:
+      DB_PASSWORD: "${DB_PASSWORD}"
+      # - DB_HOST: 실제 db 서비스의 주소를 지정해줄 수도 있다.
+    depends_on: # 실행 순서 지정
+        db:
+          condition: service_healthy
+
+volumes:
+  dbdata:
+
+# 1. build 동작
+# 2. docker compose는 서비스명이 dns로 동작해서 해당 서비스를 찾아갈 수 있다.
+#   DB_HOST - .get() 사용 -> DB_HOST 환경변수 없으면 db로
+#   - db ==> docker-compose.yml에서 정의한 서비스 이름 
