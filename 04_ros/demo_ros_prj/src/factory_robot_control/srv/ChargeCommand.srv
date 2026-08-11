@@ -1,0 +1,6 @@
+# 충전 명령 요청
+string command        # 명령어: "START_CHARGE" 또는 "STOP_CHARGE"
+---
+# 충전 명령 응답
+bool success          # 명령 성공 여부
+string message        # 결과 메시지 (예: "충전 시작됨", "충전 중지됨")
