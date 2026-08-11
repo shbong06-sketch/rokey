@@ -1,0 +1,4 @@
+[submodule "05_devops/mission_app/src/doosan-robot2"]
+	path = 05_devops/mission_app/src/doosan-robot2
+	url = https://github.com/doosan-robotics/doosan-robot2.git
+	branch = jazzy

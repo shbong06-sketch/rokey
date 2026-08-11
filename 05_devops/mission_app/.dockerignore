@@ -1,0 +1,10 @@
+build/
+install/
+log/
+**/__pycache__
+
+src/doosan-robot2/dsr_description2/
+src/doosan-robot2/dsr_gazebo2/
+src/doosan-robot2/dsr_examples2/
+src/doosan-robot2/dsr_common2/
+src/doosan-robot2/dsr_moveit2/
