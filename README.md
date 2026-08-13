@@ -12,14 +12,22 @@
 rokey/
 ├── README.md                      <-- 현재 대문 문서
 ├── TIL/                           <-- 매일 공부한 핵심 요약 및 트러블슈팅
+│   ├── Development_env/    # 개발 환경 구축 (SSH, conda, GPU 등)
+│   ├── git_study/          # Git/GitHub 학습 기록
+│   └── gazebo_study/       # Gazebo(ROS2) 학습 기록
 │
-├── PROJECT_/                # 단기 프로젝트 (독립 관리)
+├── Project_AI_basic/       # 개인 프로젝트: AI 기초 (Kaggle 경진대회)
 │
-<<<< CURRICULUM PATH >>>>
-├── 01_setup/                # 개발 환경 구축 (Git, Python, VS Code 등)
-├── 02_py_work/              # 파이썬 기본 문법, 라이브 코딩 및 과제
-├── 03_vision_ai/            # 컴퓨터 비전 및 AI 관련 학습
-│    ├── vision_ai_basic/    # AI 기초
-│    └── vision_ai_applied/  # AI 응용
-├── 04_ros/                  # ROS (로봇 운영체제) 기반 노드 및 통신 실습
-└── 05_devops/               # 개발 협업 툴(DevOps) 환경 실습
+├── 02_py_work/             # 파이썬 기본 문법, 라이브 코딩 및 과제 (ch01~ch21)
+├── 03_vision_ai/           # 컴퓨터 비전 및 AI 관련 학습
+│   ├── vision_ai_basic/    # AI 기초 (강의/과제/실습/보충수업)
+│   └── vision_ai_applied/  # AI 응용 (강의/과제 — Transformer, ViT)
+├── 04_ros/                 # ROS2 노드·통신·Gazebo 실습
+│   ├── ros2_ws/            # ROS2 실습 워크스페이스 (URDF, Gazebo)
+│   ├── demo_ros_prj/       # ROS2 미니 프로젝트
+│   └── turtle_run1/2/      # turtle sim mcap 기록
+└── 05_devops/              # 개발 협업 툴(DevOps) 환경 실습
+    ├── mission_app/        # 미션 큐 기반 로봇 운행 시스템 (doosan-robot2 서브모듈)
+    ├── robot_stack/        # Docker 기반 로봇 스택
+    └── db_study/           # DB 학습 자료
+```
